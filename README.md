@@ -8,7 +8,7 @@
 
 ## 상세 화면
 ### 시작 화면
-![start](https://user-images.githubusercontent.com/59843639/131505675-2a4d0ca1-af41-492a-b1f2-61ddf1672877.png)
+<img src = 'https://user-images.githubusercontent.com/59843639/131505675-2a4d0ca1-af41-492a-b1f2-61ddf1672877.png'>
 
 ### 배팅 금액 UP & DOWN
 ![up](https://user-images.githubusercontent.com/59843639/131505703-281d637f-bcfc-41e2-818e-c82d83f4c0c3.png)
