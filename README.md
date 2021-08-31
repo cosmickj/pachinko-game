@@ -8,10 +8,10 @@
 
 ## 상세 화면
 ### 시작 화면
-<img src = 'https://user-images.githubusercontent.com/59843639/131505675-2a4d0ca1-af41-492a-b1f2-61ddf1672877.png' width='50%'>
+<img alt="start" src="https://user-images.githubusercontent.com/59843639/131508315-09aaea6a-9680-4197-8bf3-214b7121c78d.png" width="50%" >
 
 ### 배팅 금액 UP & DOWN
-<img src = 'https://user-images.githubusercontent.com/59843639/131505703-281d637f-bcfc-41e2-818e-c82d83f4c0c3.png' width='50%'><img src = 'https://user-images.githubusercontent.com/59843639/131505719-6fcb1750-4484-4050-b468-4b143b5073de.png' width='50%'>
+<img src = 'https://user-images.githubusercontent.com/59843639/131508303-ca73b5d2-d3f2-4cf1-97fc-5d98ddb52852.png' width='50%'><img src = 'https://user-images.githubusercontent.com/59843639/131508311-42b6e20e-c920-4b44-a81e-012758b58c76.png' width='50%'>
 
 ### 게임 오버
-<img src = 'https://user-images.githubusercontent.com/59843639/131505722-51317fd3-d925-4653-896f-abbfac553f5a.png' width='50%'>
+<img alt="game over" src="https://user-images.githubusercontent.com/59843639/131508314-6d780609-71b1-4c50-9e5e-27c21f8427d2.png" width="50%">
