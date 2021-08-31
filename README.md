@@ -13,6 +13,7 @@
 ### 배팅 금액 UP & DOWN
 Up버튼을 눌러서 배팅 금액을 올린 상태
 <img src = 'https://user-images.githubusercontent.com/59843639/131505703-281d637f-bcfc-41e2-818e-c82d83f4c0c3.png' width='805' height='385'>
+
 Down버튼을 눌러서 배팅 금액을 올린 상태
 <img src = 'https://user-images.githubusercontent.com/59843639/131505719-6fcb1750-4484-4050-b468-4b143b5073de.png' width='805' height='385'>
 
