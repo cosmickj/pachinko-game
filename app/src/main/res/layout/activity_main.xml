@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/slot_result_text"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_slot_result_text"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:text="@string/welcome"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/slot_red_view"
+        android:layout_width="350dp"
+        android:layout_height="230dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_slot_red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/slot_result_text" />
+
+    <View
+        android:id="@+id/slot_black_view"
+        android:layout_width="320dp"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_slot_black"
+        app:layout_constraintBottom_toBottomOf="@id/slot_red_view"
+        app:layout_constraintEnd_toEndOf="@id/slot_red_view"
+        app:layout_constraintStart_toStartOf="@id/slot_red_view"
+        app:layout_constraintTop_toTopOf="@id/slot_red_view" />
+
+    <View
+        android:id="@+id/slot_yellow_view"
+        android:layout_width="280dp"
+        android:layout_height="170dp"
+        android:background="@drawable/bg_slot_yellow"
+        app:layout_constraintBottom_toBottomOf="@id/slot_black_view"
+        app:layout_constraintEnd_toEndOf="@id/slot_black_view"
+        app:layout_constraintStart_toStartOf="@id/slot_black_view"
+        app:layout_constraintTop_toTopOf="@id/slot_black_view" />
+
+    <ImageView
+        android:id="@+id/slot_one"
+        android:layout_width="80dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:src="@drawable/ic_seven"
+        app:layout_constraintBottom_toBottomOf="@id/slot_yellow_view"
+        app:layout_constraintEnd_toStartOf="@id/slot_two"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@id/slot_yellow_view"
+        app:layout_constraintTop_toTopOf="@id/slot_yellow_view" />
+
+    <ImageView
+        android:id="@+id/slot_two"
+        android:layout_width="80dp"
+        android:layout_height="120dp"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:src="@drawable/ic_seven"
+        app:layout_constraintBottom_toBottomOf="@id/slot_yellow_view"
+        app:layout_constraintEnd_toStartOf="@id/slot_three"
+        app:layout_constraintStart_toEndOf="@id/slot_one"
+        app:layout_constraintTop_toTopOf="@id/slot_yellow_view" />
+
+    <ImageView
+        android:id="@+id/slot_three"
+        android:layout_width="80dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="5dp"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:src="@drawable/ic_seven"
+        app:layout_constraintBottom_toBottomOf="@id/slot_yellow_view"
+        app:layout_constraintEnd_toEndOf="@id/slot_yellow_view"
+        app:layout_constraintStart_toEndOf="@id/slot_two"
+        app:layout_constraintTop_toTopOf="@id/slot_yellow_view" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="35dp"
+        android:layout_height="120dp"
+        android:background="@drawable/lever_button"
+        app:layout_constraintBottom_toBottomOf="@id/slot_red_view"
+        app:layout_constraintStart_toEndOf="@id/slot_red_view"
+        app:layout_constraintTop_toTopOf="@id/slot_red_view" />
+
+    <ImageView
+        android:id="@+id/slot_machine_keyboard"
+        android:layout_width="450dp"
+        android:layout_height="105dp"
+        android:src="@drawable/ic_machine_keyboard"
+        app:layout_constraintEnd_toEndOf="@+id/slot_red_view"
+        app:layout_constraintStart_toStartOf="@+id/slot_red_view"
+        app:layout_constraintTop_toBottomOf="@+id/slot_red_view" />
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/stop_button"
+        app:layout_constraintEnd_toEndOf="@id/slot_red_view"
+        app:layout_constraintTop_toBottomOf="@id/slot_red_view" />
+
+    <Button
+        android:id="@+id/btn_bet_down"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginStart="50dp"
+        android:background="@drawable/bet_down_button"
+        app:layout_constraintStart_toStartOf="@+id/slot_machine_keyboard"
+        app:layout_constraintTop_toBottomOf="@+id/slot_red_view" />
+
+    <Button
+        android:id="@+id/btn_bet_up"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/bet_up_button"
+        app:layout_constraintStart_toEndOf="@id/btn_bet_down"
+        app:layout_constraintTop_toTopOf="@id/btn_bet_down" />
+
+    <TextView
+        android:id="@+id/waring_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#80c0c0c0"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="도박중독 신고는 국번없이 1336"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/slot_score_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:text="BALANCE"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/slot_red_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/slot_red_view" />
+
+    <TextView
+        android:id="@+id/slot_current_balance_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="100"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="@id/slot_score_text"
+        app:layout_constraintTop_toBottomOf="@id/slot_score_text" />
+
+    <TextView
+        android:id="@+id/slot_bet_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOTAL BET"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/slot_current_bet_text"
+        app:layout_constraintStart_toStartOf="@id/slot_score_text" />
+
+    <TextView
+        android:id="@+id/slot_current_bet_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="@id/slot_red_view"
+        app:layout_constraintStart_toStartOf="@id/slot_current_balance_text" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/fireworks_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="fireworks.json"
+        app:lottie_loop="true"
+        android:visibility="visible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
